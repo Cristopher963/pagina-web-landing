@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #004080;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.header-section {
+  padding: 80px 20px 40px;
+}
+
+.quienes-somos-section {
+  padding: 80px 20px 40px;
+  background-color: #f4f4f4;
+  min-height: 60vh;
+}
+
+.contenido-quienes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contenido-quienes img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.contenido-quienes p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contacto-section {
+  padding: 80px 20px 40px;
+  min-height: 60vh;
+}
+
+header {
+  background: #0073e6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
